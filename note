@@ -1,0 +1,15 @@
+Request Headers
+
+Note
+
+Whenever I use this code in the next videos:
+
+r = requests.get("http://www.pythonhow.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/")
+
+please use this instead:
+
+r = requests.get("http://www.pyclass.com/real-estate/rock-springs-wy/LCWYROCKSPRINGS/", headers={'User-agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0'})
+
+The rest of the code stays the same.
+
+So, we're just changing the domain name from pythonhow to pyclass and we're adding a header argument. Some webpages don't like scripts sometimes, so adding a header allows the script to impersonate a web browser.
